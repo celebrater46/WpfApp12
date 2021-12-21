@@ -8,6 +8,10 @@
         public MainWindow()
         {
             InitializeComponent();
+            
+            // listView.Items.Add(new string[] = {"11", "Hideru"}); // get rid of "="
+            listView.Items.Add(new string[] {"11", "Hideru"});
+            listView.Items.Add(new string[] {"12", "Seiko"});
         }
     }
 }

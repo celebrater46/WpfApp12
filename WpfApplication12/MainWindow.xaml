@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:WpfApplication12"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <!-- <Grid> -->
+    <StackPanel>
+        <ListView x:Name="listView" HorizontalAlignment="Left" ItemsSource="{Binding Mode=OneWay}" Width="400" Height="200" Margin="5, 5, 5,5 ">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding [0]}" Width="100" />
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding [1]}" Width="250" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Width="120" Height="30" Margin="5, 5, 5, 5" />
+    </StackPanel>
 </Window>
