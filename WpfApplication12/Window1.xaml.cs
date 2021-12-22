@@ -18,6 +18,10 @@ namespace WpfApplication12
             this.People.Add(new Person{ ID = 43, Name = "Reina" });
             listView.DataContext = this.People;
         }
-        
+
+        private void BtClick(object sender, RoutedEventArgs e)
+        {
+            new Window2().Show();
+        }
     }
 }
